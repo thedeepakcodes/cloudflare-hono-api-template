@@ -1,0 +1,20 @@
+{
+  "name": "cf-hono-api",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "deploy": "cf deploy --secrets-file .env.production"
+  },
+  "dependencies": {
+    "dodopayments": "^2.54.0",
+    "hono": "^4.13.13",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.63.0",
+    "@types/node": "^26.6.4",
+    "cf": "^1.0.0-beta.13",
+    "vite": "^8.3.3"
+  }
+}
