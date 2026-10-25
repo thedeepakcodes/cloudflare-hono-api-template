@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
 
       NODE_ENV: bindings.text(mode === "production" ? "production" : "development"),
       COOKIE_SECRET: bindings.secret(),
+      ALLOWED_ORIGINS: bindings.secret(),
     },
   },
 }));

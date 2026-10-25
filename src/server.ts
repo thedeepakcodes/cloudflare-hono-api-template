@@ -1,9 +1,12 @@
 import { Hono } from "hono";
+import { NotFound } from "./common/errors";
+import { corsMiddleware } from "./lib/cors";
 import { errorHandler } from "./middlewares/error";
 import rootRouter from "./modules/root/route";
-import { NotFound } from "./common/errors";
 
 const app = new Hono();
+
+app.use("*", corsMiddleware);
 
 app.route("/", rootRouter);
 

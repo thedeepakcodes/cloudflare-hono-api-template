@@ -9,7 +9,9 @@
   "dependencies": {
     "dodopayments": "^2.54.0",
     "hono": "^4.13.13",
-    "zod": "^4.6.5"
+    "nanoid": "^6.0.2",
+    "path-to-regexp": "^9.0.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.63.0",
